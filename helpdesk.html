@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>HelpDesk 3°D - Painel de Atendimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Central de Suporte TI</h1>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2> Resumo Operacional</h2>
+            <ul>
+                <li><strong>Chamados Abertos:</strong></li>
+                <li><strong>Em Andamento:</strong></li>
+                <li><strong>Concluídos hoje:</strong></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Abrir chamado de suporte</h2>
+            <form>
+                <label for="solicitante">Nome do solicitante:</label><br>
+                <input type="text" id="solicitante" required> <br><br>
+
+                <label for="setor">Setor:</label><BR>
+                <select id="setor" required>
+                    <option value="Selecione o setor...">Selecione o setor...</option>
+                    <option value="Finaceiro">Finaceiro</option>
+                    <option value="RH">RH</option>
+                    <option value="vendas">vendas</option>
+                </select><br><br>
+
+                <label>Prioridade do Chamado: </label>
+                <input type="radio" id="p_baixa" name="prioridade" value="baixa">
+                <label for="p_baixa">Baixa</label>
+
+                <input type="radio" id="p_media" name="media" value="media" checked>
+                <label for="p_media">Media</label>
+
+                <input type="radio" id="p_alta" name="alta" value="alta">
+                <label for="p_alta">Alta</label>
+
+                <input type="critica" id="p_critica" name="critica" value="critica">
+                <label for="p_critica">Baixa</label>
+
+                <label>Equipamentos Envolvidos: </label><br>
+                <input type="checkbox" id="eq_monitor" value="monitor">
+                <label for="eq_monitor"></label>
+
+                <input type="checkbox" id="eq_monitor" value="monitor">
+                <label for="eq_monitor"></label>
+
+                <input type="checkbox" id="eq_monitor" value="monitor">
+                <label for="eq_monitor"></label>
+
+                <input type="checkbox" id="eq_monitor" value="monitor">
+                <label for="eq_monitor"></label>
+
+                <input type="checkbox" id="eq_monitor" value="monitor">
+                <label for="eq_monitor"></label>
+
+                <label for="descricao">Descrição detalhada do Problema:</label>
+                <textarea id="descricao" rows="4" cols="50" placeholder="Descreva o problema" required></textarea><br><br>
+
+                <button type="submit">Enviar chamado</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Chamados recentes</h2>
+            <table border="1">
+                <thead>
+                    <tr>Setor</tr>
+                    <tr>Id CHAMADO</tr>
+                    <tr>Solicitante</tr>
+                    <tr>Prioridade</tr>
+                    <tr>DATA DE ABERTURA</tr>
+                    <tr>Status</tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Financeiro</td>
+                        <td>#1098</td>
+                        <td>Carlos</td>
+                        <td>Alta</td>
+                        <td>04/08/2026</td>
+                        <td>Em Andamento</td>
+                    </tr>
+                    <tr>
+                        <td>#1098</td>
+                        <td>Carlos</td>
+                        <td>Alta</td>
+                        <td>04/08/2026</td>
+                        <td>Em Andamento</td>
+                    </tr>
+                    <tr>
+                        <td>#1098</td>
+                        <td>Carlos</td>
+                        <td>Alta</td>
+                        <td>04/08/2026</td>
+                        <td>Em Andamento</td>
+                    </tr>
+                    <tr>
+                        <td>#1098</td>
+                        <td>Carlos</td>
+                        <td>Alta</td>
+                        <td>04/08/2026</td>
+                        <td>Em Andamento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

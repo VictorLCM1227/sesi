@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    background-color: rgb(110, 95, 95);
+    padding: 20px;
+}
+
+main {
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+h1 {
+    color: aqua;
+}
+
+button {
+    background-color: blue;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+}
