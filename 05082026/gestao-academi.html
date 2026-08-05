@@ -2,65 +2,112 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Portal do professor jorge</title>
+    <title>Portal do Professor Jorge</title>
 </head>
 <body>
     <header>
-        <h1>Poral do Professor</h1>
-        <p>Usuario logado: Prif. Jorge</p>
-        <button type="button">Sair do Ssitema</button>
+        <h1>Portal do Professor</h1>
+        <p>Usuário logado: Prof. Jorge</p>
+        <button type="button">Sair do Sistema</button>
         <hr>
     </header>
 
     <main>
         <section>
-            <h2>Lancar nova atualizacao/atividade:</h2>
+            <h2>Lançar nova atualização/atividade:</h2>
+
             <form>
-                <label for="titulo_aval">Nome avaliação:</label>
-                <input type="text" id="titulo_aval" placeholder="Ex: Peso" required><br><br>
+                <label for="titulo_aval">Nome da avaliação:</label>
+                <input type="text" id="titulo_aval" placeholder="Ex: Peso" required>
+                <br><br>
 
-                <label for="exercico">Exercicio:</label>
+                <label for="disciplina">Exercício:</label>
                 <select id="disciplina" required>
-                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
-                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
-                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
-                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
-                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
-                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
-                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
-                </select><br><br>
+                    <option value="elevacao_pelvica">ELEVAÇÃO PÉLVICA</option>
+                    <option value="agachamento">AGACHAMENTO</option>
+                    <option value="supino">SUPINO</option>
+                    <option value="remada">REMADA</option>
+                    <option value="leg_press">LEG PRESS</option>
+                    <option value="rosca_direta">ROSCA DIRETA</option>
+                    <option value="desenvolvimento">DESENVOLVIMENTO</option>
+                </select>
+                <br><br>
 
-                <label for="peso">Peso da serie</label><br>
-                <input type="number" id="peso" min="0" max="100" step="1" required><br><br>
+                <label for="peso">Peso da série:</label><br>
+                <input type="number" id="peso" min="0" max="100" step="1" required>
+                <br><br>
 
-                <label for="ficha">Ficha de Treino(.pdf)</label><br><br>
-                <input type="file" id="ficha" accept=".pdf"></input><br><br>
+                <label for="ficha">Ficha de Treino (.pdf):</label><br><br>
+                <input type="file" id="ficha" accept=".pdf">
+                <br><br>
 
-                <button type="submit">LANCAR AVALIACAO</button>
+                <button type="submit">LANÇAR AVALIAÇÃO</button>
             </form>
         </section>
+
         <hr>
 
         <section>
             <h2>Desempenho dos alunos</h2>
+
             <table border="1">
                 <thead>
                     <tr>
-                        <th rowspan="2">MATRICULA</th>
-                        <th rowspan="2">MATRICULA</th>
-                        <th rowspan="2">MATRICULA</th>
-                        <th rowspan="2">MATRICULA</th>
-                        <th rowspan="2">MATRICULA</th>
-                        <th rowspan="2">MATRICULA</th>
+                        <th rowspan="2">Matrícula</th>
+                        <th rowspan="2">Nome</th>
+                        <th colspan="2">Notas</th>
+                        <th rowspan="2">Frequência</th>
+                        <th rowspan="2">Situação</th>
                     </tr>
                     <tr>
-                        <th> NOTA 1</th>
-                        <th> NOTA 2</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
                     </tr>
                 </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1234</td>
+                        <td>Sabrina</td>
+                        <td>9,0</td>
+                        <td>8,5</td>
+                        <td>95%</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>1235</td>
+                        <td>João</td>
+                        <td>8,5</td>
+                        <td>9,0</td>
+                        <td>90%</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>1236</td>
+                        <td>Maria</td>
+                        <td>7,5</td>
+                        <td>8,0</td>
+                        <td>88%</td>
+                        <td>Aprovado</td>
+                    </tr>
+                    <tr>
+                        <td>1237</td>
+                        <td>Pedro</td>
+                        <td>6,0</td>
+                        <td>7,0</td>
+                        <td>80%</td>
+                        <td>Recuperação</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Média Geral: 8,0</strong></td>
+                        <td colspan="3"><strong>Frequência Média: 91,25%</strong></td>
+                    </tr>
+                </tfoot>
             </table>
         </section>
     </main>
 </body>
 </html>
-
