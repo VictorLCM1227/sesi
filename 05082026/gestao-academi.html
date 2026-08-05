@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal do professor jorge</title>
+</head>
+<body>
+    <header>
+        <h1>Poral do Professor</h1>
+        <p>Usuario logado: Prif. Jorge</p>
+        <button type="button">Sair do Ssitema</button>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lancar nova atualizacao/atividade:</h2>
+            <form>
+                <label for="titulo_aval">Nome avaliação:</label>
+                <input type="text" id="titulo_aval" placeholder="Ex: Peso" required><br><br>
+
+                <label for="exercico">Exercicio:</label>
+                <select id="disciplina" required>
+                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
+                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
+                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
+                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
+                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
+                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
+                    <option value="serrada simulator">ELEVAÇÃO PERLVICA</option>
+                </select><br><br>
+
+                <label for="peso">Peso da serie</label><br>
+                <input type="number" id="peso" min="0" max="100" step="1" required><br><br>
+
+                <label for="ficha">Ficha de Treino(.pdf)</label><br><br>
+                <input type="file" id="ficha" accept=".pdf"></input><br><br>
+
+                <button type="submit">LANCAR AVALIACAO</button>
+            </form>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Desempenho dos alunos</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th rowspan="2">MATRICULA</th>
+                        <th rowspan="2">MATRICULA</th>
+                        <th rowspan="2">MATRICULA</th>
+                        <th rowspan="2">MATRICULA</th>
+                        <th rowspan="2">MATRICULA</th>
+                        <th rowspan="2">MATRICULA</th>
+                    </tr>
+                    <tr>
+                        <th> NOTA 1</th>
+                        <th> NOTA 2</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
+
