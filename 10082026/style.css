@@ -57,3 +57,17 @@ aside{
     border: 1px solid #ffffff;
     height: fit-content;
 }
+
+asidde h3{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #7a0092;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside li{
+    margin-bottom: 10px;
+}
