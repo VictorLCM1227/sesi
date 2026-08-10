@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Painel de Gestão de estoque</title>
+</head>
+<body>
+    <header>
+        <h1>Centro de Distribuição - Controle de Estoque</h1>
+        <hr>
+    </header>
+
+    <aside>
+        <h3>Menu do Sistema</h3>
+        <ul>
+            <li><a href="#">Visão Geral</a></li>
+            <li><a href="#">Entrada de Materiais</a></li>
+            <li><a href="#">Inventário</a></li>
+            <li><a href="#">Relatórios</a></li>
+        </ul>
+        <hr>
+    </aside>
+
+    <main>
+        <section>
+            <h2> Cadastrar novo item no estoque</h2>
+            <form>
+                <label for="sku">Código SKU</label>
+                <input type="text" id="sku" placeholder="Ex: ELE-001" required><br><br>
+
+                <label for="produto"> Nome do Produto:</label>
+                <input type="text" id="prodtudo" placeholder="Nome do item" required><br><br>
+
+                <label for="categoria">Categoria:</label><br>
+                <select id="categoria" required>
+                    <option value="">Selecione uma categoria...</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="ferramentas">Ferramentas</option>
+                    <option value="embalagens">Embalagens</option>
+                    <option value="escritorio">Escritprio</option>
+                </select><br><br>
+
+                <label for="quantidade">Quantidade:</label><br>
+                <input type="number" id="quantidade" min="1" required><br><br>
+
+                <label for="preco">Preço Unitário (R$):</label>
+                <input type="number" id="preco" step="0.01" placeholder="0.00" required><br><br>
+
+                <label for="data_recebimento">Data de recebimento:</label>
+                <input type="date" id="data_recebimento" required><br><br>
+
+                <button type="submit">Cadastrar Item</button>
+                <button type="reset">Limpar Campos</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Inventário Atual</h2>
+            <table border="1"></table>
+            <thead>
+                <tr>
+                    <th> SKU </th>
+                    <th> Item</th>
+                    <th>Categoria</th>
+                    <th>Qtd em Estoque</th>
+                    <th>Preços</th>
+                    <th>Preços Unitários</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ELE-102</td>
+                    <td>Teclado USB</td>
+                    <td>Eletrônicos</td>
+                    <td>20</td>
+                    <td>R$ 210,00</td>
+                    <td>Disponível</td>
+                </tr>
+                <tr>
+                    <td>ELE-103</td>
+                    <td>Jogo de Ferramentas</td>
+                    <td>Ferramentas</td>
+                    <td>12</td>
+                    <td>R$ 85,00</td>
+                    <td>Baixo Estoque</td>
+                </tr>
+                <tr>
+                    <td>ELE-104</td>
+                    <td>Jogo de martelos</td>
+                    <td>Ferramentas</td>
+                    <td>121</td>
+                    <td>R$ 835,00</td>
+                    <td>Baixo Estoque</td>
+                </tr>
+                <tr>
+                    <td>ELE-108</td>
+                    <td>Papel A4</td>
+                    <td>Escritprio</td>
+                    <td>12</td>
+                    <td>R$ 85,00</td>
+                    <td>Baixo Estoque</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Total geral acumulado em estoque</strong></td>
+                    <td colspan="3"><strong>437 itens</strong></td>
+                </tr>
+            </tfoot>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 3°D </p>
+    </footer>
+</body>
+</html>
