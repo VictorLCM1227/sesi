@@ -1,4 +1,4 @@
-css
+
 * {
     margin: 0;
     padding: 0;
@@ -125,32 +125,37 @@ select {
 
 input:focus,
 select:focus {
-    outline: 2px solid #1a01f5;
+    outline: none;
+    border-color: #1a01f5;
 }
 
 /* Botões */
 
 button {
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    cursor: pointer;
     font-size: 0.95rem;
-    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 button[type="submit"] {
     background-color: #1a01f5;
-    color: white;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.85;
 }
 
 button[type="reset"] {
     background-color: #ddd;
-    color: black;
+    color: #000000;
 }
 
-button:hover {
-    opacity: 0.85;
+button[type="reset"]:hover {
+    background-color: aliceblue;
 }
 
 /* Tabela */
@@ -189,28 +194,4 @@ footer {
     color: #1a01f5;
     font-size: 0.875rem;
     margin-top: 0;
-}
-
-
-input:focus, select:focus{
-    outline: none;
-    border-color: #1a01f5;
-}
-
-button{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-button[type="submit"]{
-    background-color: #1a01f5;
-    color: #ccc;
-}
-
-button[type="submit"]:hover{
-    background-color: #1a01f5;
 }
