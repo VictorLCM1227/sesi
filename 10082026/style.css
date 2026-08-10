@@ -9,6 +9,10 @@ body{
     background-color: aliceblue;
     color: black;
     line-height: 16;
-    padding: ;
+    padding: 20PX;
 
+}
+
+hr{
+    display: none;
 }
