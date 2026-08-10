@@ -16,3 +16,34 @@ body{
 hr{
     display: none;
 }
+
+/* cabeçalho e rodapé */
+header {
+    background-color: #1a01f5;
+    color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #1a01f5;
+    font-size: 0,875rem;
+    margin-top: 30px;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header,footer {
+    width: 100;
+}
