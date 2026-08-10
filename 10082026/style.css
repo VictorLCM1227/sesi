@@ -71,3 +71,14 @@ aside ul{
 aside li{
     margin-bottom: 10px;
 }
+
+aside a{
+    text-decoration: none;
+    color: #000; 
+    font-size: 0.95rem;
+}
+
+aside a:hover{
+    text-decoration: underline;
+}
+
