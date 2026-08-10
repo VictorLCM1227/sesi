@@ -191,3 +191,26 @@ footer {
     margin-top: 0;
 }
 
+
+input:focus, select:focus{
+    outline: none;
+    border-color: #1a01f5;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"]{
+    background-color: #1a01f5;
+    color: #ccc;
+}
+
+button[type="submit"]:hover{
+    background-color: #1a01f5;
+}
