@@ -1,4 +1,6 @@
 
+/* Configurações gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +27,6 @@ header {
     color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 0;
 }
 
 header h1 {
@@ -38,7 +39,6 @@ header h1 {
 aside {
     flex: 1;
     min-width: 200px;
-    min-height: 200px;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -75,6 +75,7 @@ aside a:hover {
 main {
     flex: 3;
     min-width: 0;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -167,27 +168,33 @@ table {
     font-size: 0.9rem;
 }
 
-table, th, td {
-    border: none;
-}
-
+th,
 td {
-    padding: 12px;
-    border: 1px solid #ddd;
+    padding: 12px 15px;
     text-align: left;
+    border: 1px solid #ddd;
 }
 
 th {
     background-color: #1a01f5;
-    color: white;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
 }
 
 tbody tr:hover {
-    background-color: #f5f5f5;
+    background-color: #e8e8ff;
 }
 
 tfoot {
     background-color: #eee;
+}
+
+tfoot td {
+    border: 1px solid #ddd;
 }
 
 /* Rodapé */
@@ -198,5 +205,4 @@ footer {
     padding: 20px;
     color: #1a01f5;
     font-size: 0.875rem;
-    margin-top: 0;
 }
