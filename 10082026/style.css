@@ -163,9 +163,14 @@ button[type="reset"]:hover {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
 
-th,
+table, th, td {
+    border: none;
+}
+
 td {
     padding: 12px;
     border: 1px solid #ddd;
