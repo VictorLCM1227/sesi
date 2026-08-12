@@ -138,3 +138,39 @@ button[type="reset"]{
 button[type="reset"]:hover{
     background-color: rgb(205, 205, 219);
 }
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+table, th, td{
+    border: none;
+}
+
+thead{
+    background-color: #f4f6f9;
+}
+
+th, td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f4f6f9;
+    vertical-align: middle;
+}
+
+th{
+    color: #0f172a;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f4f6f9;
+}
+
+tbodytr:hover{
+    background-color: #e2e8f0;
+}
+
